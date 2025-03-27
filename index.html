@@ -11,73 +11,37 @@
             padding: 0;
             background-color: #f5f5f5;
         }
-        header {
-            background-color: #1a4f8a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 28px;
-        }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
         }
         .dashboard-container {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin-top: 20px;
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 1100px;
         }
         iframe {
             width: 100%;
-            height: 1080px;
+            height: 100%;
             border: none;
             overflow: hidden;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-            color: #666;
-            font-size: 14px;
-        }
         /* Responsividade para mobile */
         @media (max-width: 768px) {
-            iframe {
-                height: 600px;
-            }
-            h1 {
-                font-size: 22px;
-            }
-            .dashboard-container {
-                min-height: 620px;
-                padding: 10px;
+            .container {
+                height: 100vh;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Dashboard de Gestão de Obras e Projetos</h1>
-    </header>
-    
     <div class="container">
         <div class="dashboard-container">
             <iframe src="https://lookerstudio.google.com/embed/reporting/69911352-ab27-4146-8c35-4e826a47e130/page/KE6EF" frameborder="0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
         </div>
-        
-        <footer>
-            <p>Dados atualizados automaticamente a partir do Google Sheets. Última atualização: março 2025.</p>
-        </footer>
     </div>
 </body>
 </html>
